@@ -1,0 +1,21 @@
+.plus-minus-input {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .plus-minus-input .input-group-field {
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    width: 53%;
+    font-size: 2.5em;
+    border-color: transparent;
+}
+    .plus-minus-input .input-group-field::-webkit-inner-spin-button,
+    .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      appearance: none; }
+  .plus-minus-input .input-group-button .circle {
+    border-radius: 50%;
+    border: 2px solid #27387E;
+}

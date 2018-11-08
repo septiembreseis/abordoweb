@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>All Abordo ¡Tú eliges el destino!</title>
+    <meta name="description" content="Nacemos de la motivación por mejorar los servicios de transporte de pasajeros, ofreciendo una mejor alternativa en comodidad, seguridad y confianza.">
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="15 days">
+
+
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="/css/forms.css" rel="stylesheet" type="text/css">
+    <link href="/css/inputs.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:300,400,700,800" rel="stylesheet">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 650px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--#include virtual="/include/menu.htm"-->
+
+    <div class="container-fluid hero-rosa pad">
+        <div class="row">
+            <div class="col-sm-8">
+               <br>
+                <h1 class="big-white">Nuestras centrales</h1>
+            </div>
+            <div class="col-sm-4">
+                <img src="https://via.placeholder.com/350x150">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid desc-tarjeta">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+            <h2>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div id="map" style="margin-bottom: -100px;"></div>
+    
+<!--
+    <script>
+      var map;
+      var chicago = new google.maps.LatLng(41.850033, -87.6500523);
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -87.6500523, lng: 41.850033},
+          zoom: 8
+        });
+      }
+    </script>
+-->
+   <script>
+        function initMap(){
+          var map;
+          var corp = new google.maps.LatLng(25.7942369, -108.9922637);
+
+            var marker = new google.maps.Marker({
+                    position: corp,
+                    map: map,
+                    title: 'Click to Zoom'
+                    });
+
+            var central = new google.maps.LatLng(25.781767, -108.9900158);
+            var marker = new google.maps.Marker({
+                    position: central,
+                    map: map,
+                    title: 'Click to Zoom'
+                    });
+            var guasave = new google.maps.LatLng(25.5609265, -108.4624404);
+            var marker = new google.maps.Marker({
+                    position: guasave,
+                    map: map,
+                    title: 'Click to Zoom'
+                    });
+            }
+       
+       
+    </script> 
+<!--
+    <script>
+        function myMap() {
+          var myCenter = new google.maps.LatLng(25.7942369,-108.9922584);
+          var myCenter2 = new google.maps.LatLng(25.7832762,-108.9925238);
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {center: myCenter, zoom: 10};
+            var mapOptions = {center: myCenter2, zoom: 10};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+          var marker = new google.maps.Marker({position:myCenter2});
+          marker.setMap(map);
+
+          // Zoom to 9 when clicking on marker
+          google.maps.event.addListener(marker,'click',function() {
+            map.setZoom(16);
+            map.setCenter(marker.getPosition());
+          });
+        }
+   </script>
+-->
+
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlbP_V6RFfZTyJamXyD7mThTRp-ejpVew&callback=initMap"></script>
+
+    <!--#include virtual="/include/footer.htm"-->
+
+
+
+</body>
+
+</html>
